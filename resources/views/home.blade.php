@@ -11,21 +11,52 @@
 <body class="bg-gray-50">
 
     <header class="bg-teal-600 text-white">
-        <div class="container mx-auto px-2  py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="w-14 h-14">
-                <span class="font-bold text-3xl">Paws Up Pet Care</span>
-            </div>
-            <nav class="absolute left-1/2 transform -translate-x-1/2 flex space-x-6">
-                <a href="#benefits" class="hover:underline">Benefits</a>
-                <a href="#services" class="hover:underline">Care Services</a>
-            </nav>
-            <a href="{{ route('pet.reserve') }}" class="border border-white px-4 py-1 rounded hover:bg-teal-300 inline-block text-white">
-                Reserve
-            </a>
-
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+        <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="w-14 h-14">
+        <span class="font-bold text-3xl">Paws Up Pet Care</span>
         </div>
+
+        <!-- Hamburger & Nav -->
+        <div class="flex items-center space-x-4">
+        <!-- Navigation for medium+ screens -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="#benefits" class="hover:underline">Benefits</a>
+            <a href="#services" class="hover:underline">Care Services</a>
+        </nav>
+
+        <!-- Reserve button -->
+        <a href="{{ route('pet.reserve') }}" class="border border-white px-4 py-1 rounded hover:bg-teal-300 text-white">
+            Reserve
+        </a>
+
+        <!-- Hamburger button for mobile -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        </div>
+    </div>
+
+    <!-- Mobile menu, hidden by default -->
+    <nav id="mobile-menu" class="hidden bg-teal-700 px-4 pb-4 md:hidden">
+        <a href="#benefits" class="block py-2 hover:underline border-b border-teal-600">Benefits</a>
+        <a href="#services" class="block py-2 hover:underline">Care Services</a>
+    </nav>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        });
+    </script>
     </header>
+
 
      <section class="bg-yellow-100 py-12">
         <div class="container mx-auto flex flex-col md:flex-row items-center text-center md:text-left">
