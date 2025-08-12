@@ -11,66 +11,62 @@
 <body class="bg-gray-50">
 
     <header class="bg-teal-600 text-white">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <!-- Logo -->
-        <div class="flex items-center space-x-2">
-        <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="w-14 h-14">
-        <span class="font-bold text-3xl">Paws Up Pet Care</span>
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+            <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="w-14 h-14">
+            <span class="font-bold text-3xl">Paws Up Pet Care</span>
+            </div>
+
+            <!-- Hamburger & Nav -->
+            <div class="flex items-center space-x-4">
+            <nav class="hidden md:flex space-x-6">
+                <a href="#benefits" class="hover:underline">Benefits</a>
+                <a href="#services" class="hover:underline">Care Services</a>
+            </nav>
+            <a href="{{ route('pet.reserve') }}" class="border border-white px-4 py-1 rounded hover:bg-teal-300 text-white">
+                Reserve
+            </a>
+
+            <!-- Hamburger button for mobile -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                viewBox="0 0 24 24">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            </div>
         </div>
 
-        <!-- Hamburger & Nav -->
-        <div class="flex items-center space-x-4">
-        <!-- Navigation for medium+ screens -->
-        <nav class="hidden md:flex space-x-6">
-            <a href="#benefits" class="hover:underline">Benefits</a>
-            <a href="#services" class="hover:underline">Care Services</a>
+        <!-- Mobile menu, hidden by default -->
+        <nav id="mobile-menu" class="hidden bg-teal-700 px-4 pb-4 md:hidden">
+            <a href="#benefits" class="block py-2 hover:underline border-b border-teal-600">Benefits</a>
+            <a href="#services" class="block py-2 hover:underline">Care Services</a>
         </nav>
-
-        <!-- Reserve button -->
-        <a href="{{ route('pet.reserve') }}" class="border border-white px-4 py-1 rounded hover:bg-teal-300 text-white">
-            Reserve
-        </a>
-
-        <!-- Hamburger button for mobile -->
-        <button id="menu-btn" class="md:hidden focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            viewBox="0 0 24 24">
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-        </div>
-    </div>
-
-    <!-- Mobile menu, hidden by default -->
-    <nav id="mobile-menu" class="hidden bg-teal-700 px-4 pb-4 md:hidden">
-        <a href="#benefits" class="block py-2 hover:underline border-b border-teal-600">Benefits</a>
-        <a href="#services" class="block py-2 hover:underline">Care Services</a>
-    </nav>
-
-    <script>
-        const btn = document.getElementById('menu-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-        });
-    </script>
     </header>
 
 
      <section class="bg-yellow-100 py-12">
-        <div class="container mx-auto flex flex-col md:flex-row items-center text-center md:text-left">
-            <div class="md:w-1/2 mb-8 md:mb-0">
-                <h2 class="text-6xl font-extrabold mb-6">Professional <span class="text-teal-500">Pet Training</span> & <span class="text-orange-500">Care</span></h2>
-                <p class="text-xl mb-6">Helping your pets become their best selves with personalized training and care services.</p>
-                <a href="#what-we-offer" class="bg-teal-500 text-white py-3 px-6 text-lg rounded-lg hover:bg-teal-700">Learn More</a>
-            </div>
-            <div class="md:w-1/2 flex justify-end">
-               <img src="{{ asset('images/dog.jpg') }}" alt="Dog1" lass="w-3/5 h-auto object-cover rounded-lg -translate-x-3 -translate-y-5 mt-6">
-            </div>            
-            </div>            
-        </div>
-    </section> 
+  <div class="container mx-auto flex flex-col md:flex-row items-center text-center md:text-left px-4 md:px-0">
+    <!-- Teks -->
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+        Professional <span class="text-teal-500">Pet Training</span> &amp; <span class="text-orange-500">Care</span>
+      </h2>
+      <p class="text-lg md:text-xl mb-6">
+        Helping your pets become their best selves with personalized training and care services.
+      </p>
+      <a href="#what-we-offer" class="bg-teal-500 text-white py-3 px-6 text-lg rounded-lg hover:bg-teal-700 inline-block">
+        Learn More
+      </a>
+    </div>
+
+    <!-- Gambar -->
+    <div class="md:w-1/2 flex justify-center md:justify-end">
+      <img src="{{ asset('images/dog.jpg') }}" alt="Dog1" class="w-3/4 md:w-3/5 h-auto object-cover rounded-lg -translate-x-3 -translate-y-5 mt-6 md:mt-0">
+    </div>
+  </div>
+</section>
+
 
     <section id="what-we-offer" class="py-12 bg-white">
         <div class="container mx-auto text-center">
@@ -251,4 +247,13 @@
     </footer>
 
 </body>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        });
+    </script>
 </html>
