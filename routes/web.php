@@ -13,3 +13,7 @@ Route::get('/', function () {
 Route::get('/reserve', function () {
     return view('reserve');
 })->name('pet.reserve');
+
+Route::get('/petshop', function () {
+    return view('petshop');
+})->name('pet.shop');

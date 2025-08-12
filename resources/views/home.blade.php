@@ -259,7 +259,8 @@
                 <h3 class="text-lg font-semibold mb-4">Menu</h3>
                 <ul class="space-y-2">
                     <li><a href="/" class="hover:underline">Home</a></li>
-                    <li><a href="/pet-shop" class="hover:underline">Pet Shop</a></li>
+                    <li><a href="{{ route('pet.shop') }}">
+                        Pet Shop</a></li>
                     <li><a href="{{ route('pet.reserve') }}">
                         Reserve</a></li>
                 </ul>
