@@ -125,7 +125,7 @@
     <section class="relative py-12">
         <img src="{{ asset('images/paws.png') }}" alt="Background" class="absolute inset-0 object-cover w-full h-full z-0 opacity-50">
         <div class="container mx-auto text-center relative z-10">
-            <div class="flex flex-col md:flex-row justify-around">
+            <div class="flex flex-col md:flex-row justify-around space-y-6 md:space-y-0 md:space-x-8">
                 <div class="flex flex-col items-center">
                     <h4 class="text-2xl font-semibold text-black">Trainers</h4>
                     <p class="text-lg text-black">Expert Trainers</p>
@@ -208,31 +208,31 @@
         </div>
     </section>
 
-    <section id="services" class="py-12">
-        <div class="container mx-auto text-center">
+    <section id="services" class="py-12 px-4 md:px-0">
+        <div class="container mx-auto text-center px-4 md:px-0">
             <h3 class="text-3xl font-bold mb-8 text-orange-500">Care Services</h3>
-            <div class="flex justify-around">
-                <!-- Grooming Service -->
-                <div class="bg-white shadow-lg rounded-lg p-6 w-64">
-                    <img src="{{ asset('images/gromming.jpg') }}"alt="Grooming Service" class="mx-auto mb-4">
-                    <h4 class="text-xl font-semibold mb-2">Grooming</h4>
-                    <p>Professional grooming services to keep your pet looking and feeling their best.</p>
-                </div>
-                <!-- Dog Walking -->
-                <div class="bg-white shadow-lg rounded-lg p-6 w-64">
-                     <img src="{{ asset('images/walking.jpg') }}" alt="Dog Walking" class="mx-auto mb-4">
-                    <h4 class="text-xl font-semibold mb-2">Dog Walking</h4>
-                    <p>Daily dog walking services to ensure your pet gets the exercise they need.</p>
-                </div>
-                <!-- Health Check-ups -->
-                <div class="bg-white shadow-lg rounded-lg p-6 w-64">
-                     <img src="{{ asset('images/checkup.jpg') }}" alt="Health Check-ups" class="mx-auto mb-4">
-                    <h4 class="text-xl font-semibold mb-2">Health Check-up</h4>
-                    <p>Regular health check-ups to monitor your pet's well-being and catch any issues early.</p>
-                </div>
+            <div class="flex flex-col md:flex-row justify-around space-y-6 md:space-y-0 md:space-x-6">
+            <div class="bg-white shadow-lg rounded-lg p-6 w-full md:w-64">
+            <img src="{{ asset('images/gromming.jpg') }}" alt="Grooming Service" class="mx-auto mb-4">
+            <h4 class="text-xl font-semibold mb-2">Grooming</h4>
+            <p>Professional grooming services to keep your pet looking and feeling their best.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 w-full md:w-64">
+            <img src="{{ asset('images/walking.jpg') }}" alt="Dog Walking" class="mx-auto mb-4">
+            <h4 class="text-xl font-semibold mb-2">Dog Walking</h4>
+            <p>Daily dog walking services to ensure your pet gets the exercise they need.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 w-full md:w-64">
+            <img src="{{ asset('images/checkup.jpg') }}" alt="Health Check-ups" class="mx-auto mb-4">
+            <h4 class="text-xl font-semibold mb-2">Health Check-up</h4>
+            <p>Regular health check-ups to monitor your pet's well-being and catch any issues early.</p>
+        </div>
+        </div>
             </div>
         </div>
     </section>
+
+   
 
     <footer class="bg-teal-600 text-white py-6">
         <div class="container mx-auto text-center">
