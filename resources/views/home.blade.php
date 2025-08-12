@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paw Up Pet Care</title>
+    <title>Pawtopia</title>
     @vite('resources/css/app.css')
 </head>
 
@@ -14,7 +14,7 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
             <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="w-14 h-14">
-            <span class="font-bold text-3xl">Paws Up Pet Care</span>
+            <span class="font-bold text-3xl">Pawtopia Training & Care</span>
             </div>
 
             <!-- Hamburger & Nav -->
@@ -24,7 +24,7 @@
                 <a href="#services" class="hover:underline">Care Services</a>
             </nav>
             <a href="{{ route('pet.reserve') }}" class="border border-white px-4 py-1 rounded hover:bg-teal-300 text-white">
-                Reserve
+                Sign Up
             </a>
 
             <!-- Hamburger button for mobile -->
@@ -232,14 +232,49 @@
         </div>
     </section>
 
-   
-
-    <footer class="bg-teal-600 text-white py-6">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024  Pawtopia Pet Training & Care. All Rights Reserved.</p>
+    <footer class="bg-teal-600 text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
             
+            <!-- Kolom 1: Lokasi -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Our Location</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2709027817025!2d-122.4194152846814!3d37.77492977975986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzMwLjkiTiAxMjLCsDI1JzA2LjkiVw!5e0!3m2!1sen!2sus!4v1675280385574!5m2!1sen!2sus" 
+                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
+                <p>1234 Paw Street, New York City, US</p>
+                <p>+62 8768755</p>
+                <p>info@pawtopia.com</p>
+                <div class="flex space-x-3 mt-3">
+                    <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Menu</h3>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:underline">Home</a></li>
+                    <li><a href="/pet-shop" class="hover:underline">Pet Shop</a></li>
+                    <li><a href="{{ route('pet.reserve') }}">
+                        Reserve</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bawah: Hak Cipta -->
+        <div class="text-center mt-6 border-t border-teal-500 pt-4 text-sm">
+            Pawtopia © 2024 | Privacy Policy
         </div>
     </footer>
+
+
+
+
 
 </body>
     <script>

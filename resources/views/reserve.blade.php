@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-base-200">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
  <section>
     
   <div class="container mx-auto max-w-md bg-white rounded-lg shadow-md p-8">
-    <h2 class="text-center text-3xl font-extrabold text-teal-600 mb-8">Pet Clinic & Care Reservation</h2>
+    <h2 class="text-center text-3xl font-extrabold text-teal-600 mb-8">Pawtopia Training & Care Reservation</h2>
 
     <form action="#" method="POST" novalidate>
       @csrf
