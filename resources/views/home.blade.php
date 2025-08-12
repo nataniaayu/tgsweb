@@ -44,29 +44,24 @@
         </nav>
     </header>
 
-
      <section class="bg-yellow-100 py-12">
-  <div class="container mx-auto flex flex-col md:flex-row items-center text-center md:text-left px-4 md:px-0">
-    <!-- Teks -->
-    <div class="md:w-1/2 mb-8 md:mb-0">
-      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
-        Professional <span class="text-teal-500">Pet Training</span> &amp; <span class="text-orange-500">Care</span>
-      </h2>
-      <p class="text-lg md:text-xl mb-6">
-        Helping your pets become their best selves with personalized training and care services.
-      </p>
-      <a href="#what-we-offer" class="bg-teal-500 text-white py-3 px-6 text-lg rounded-lg hover:bg-teal-700 inline-block">
-        Learn More
-      </a>
-    </div>
-
-    <!-- Gambar -->
-    <div class="md:w-1/2 flex justify-center md:justify-end">
-      <img src="{{ asset('images/dog.jpg') }}" alt="Dog1" class="w-3/4 md:w-3/5 h-auto object-cover rounded-lg -translate-x-3 -translate-y-5 mt-6 md:mt-0">
-    </div>
-  </div>
-</section>
-
+        <div class="container mx-auto flex flex-col md:flex-row items-center text-center md:text-left px-4 md:px-0">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+                Professional <span class="text-teal-500">Pet Training</span> &amp; <span class="text-orange-500">Care</span>
+            </h2>
+            <p class="text-lg md:text-xl mb-6">
+                Helping your pets become their best selves with personalized training and care services.
+            </p>
+            <a href="#what-we-offer" class="bg-teal-500 text-white py-3 px-6 text-lg rounded-lg hover:bg-teal-700 inline-block">
+                Learn More
+            </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+            <img src="{{ asset('images/dog.jpg') }}" alt="Dog1" class="w-3/4 md:w-3/5 h-auto object-cover rounded-lg -translate-x-3 -translate-y-5 mt-6 md:mt-0">
+            </div>
+        </div>
+    </section>
 
     <section id="what-we-offer" class="py-12 bg-white">
         <div class="container mx-auto text-center">
@@ -97,7 +92,7 @@
                 </div>
 
                 <div class="w-full md:w-auto mb-8 md:mb-0">
-                    <img src="{{ asset('images/dogg.png') }}" alt="Dog and Cat" class="w-64 h-auto mx-auto">
+                   <img src="{{ asset('images/dogg.png') }}" alt="Dog and Cat" class="w-48 md:w-64 h-auto mx-auto">
                 </div>
 
                 <div class="flex flex-col items-start ml-4">
@@ -130,7 +125,7 @@
     <section class="relative py-12">
         <img src="{{ asset('images/paws.png') }}" alt="Background" class="absolute inset-0 object-cover w-full h-full z-0 opacity-50">
         <div class="container mx-auto text-center relative z-10">
-            <div class="flex justify-around">
+            <div class="flex flex-col md:flex-row justify-around">
                 <div class="flex flex-col items-center">
                     <h4 class="text-2xl font-semibold text-black">Trainers</h4>
                     <p class="text-lg text-black">Expert Trainers</p>
@@ -247,7 +242,6 @@
     </footer>
 
 </body>
-
     <script>
         const btn = document.getElementById('menu-btn');
         const menu = document.getElementById('mobile-menu');
