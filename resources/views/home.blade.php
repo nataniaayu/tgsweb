@@ -53,7 +53,7 @@
             <p class="text-lg md:text-xl mb-6">
                 Helping your pets become their best selves with personalized training and care services.
             </p>
-            <a href="#what-we-offer" class="bg-teal-500 text-white py-3 px-6 text-lg rounded-lg hover:bg-teal-700 inline-block">
+            <a href="#what-we-offer" class="btn btn-primary rounded-xl">
                 Learn More
             </a>
             </div>
