@@ -234,8 +234,6 @@
 
     <footer class="bg-teal-600 text-white py-8">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-            
-            <!-- Kolom 1: Lokasi -->
             <div>
                 <h3 class="text-lg font-semibold mb-4">Our Location</h3>
                 <iframe 
@@ -266,17 +264,10 @@
                 </ul>
             </div>
         </div>
-
-        <!-- Bawah: Hak Cipta -->
         <div class="text-center mt-6 border-t border-teal-500 pt-4 text-sm">
             Pawtopia © 2024 | Privacy Policy
         </div>
     </footer>
-
-
-
-
-
 </body>
     <script>
         const btn = document.getElementById('menu-btn');

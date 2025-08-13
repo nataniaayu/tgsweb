@@ -8,7 +8,7 @@ Route::get('/', function () {
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('pet.home');
 
 Route::get('/reserve', function () {
     return view('reserve');
