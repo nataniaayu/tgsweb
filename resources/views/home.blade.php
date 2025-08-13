@@ -10,7 +10,7 @@
 
 <body class="bg-gray-50">
 
-    <header class="bg-teal-600 text-white">
+    <header class="bg-primary text-primary-content">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
             <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="w-14 h-14">
