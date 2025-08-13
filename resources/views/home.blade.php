@@ -23,7 +23,7 @@
                 <a href="#benefits" class="hover:underline">Benefits</a>
                 <a href="#services" class="hover:underline">Care Services</a>
             </nav>
-            <a href="{{ route('pet.reserve') }}" class="border border-white px-4 py-1 rounded hover:bg-teal-300 text-white">
+            <a href="{{ route('pet.home') }}" class="border border-white px-4 py-1 rounded hover:bg-teal-300 text-white">
                 Sign Up
             </a>
 

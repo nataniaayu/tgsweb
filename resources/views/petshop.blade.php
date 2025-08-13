@@ -22,41 +22,72 @@
         </div>
     </header>
 
-    <!-- Product List -->
-    <section class="container mx-auto py-10">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6">Our Products</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="https://placekitten.com/300/200" alt="Product 1" class="w-full h-48 object-cover">
+    <!-- Product Section -->
+    <section class="container mx-auto py-10 px-4">
+        <h2 class="text-2xl font-bold text-teal-700 mb-6 border-b-2 border-teal-500 pb-2">Foods</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden ">
+                <img src="{{ asset('images/puppyfood.jpg') }}" alt="Puppy Food" class="w-50 h-48 object-cover mx-auto">
                 <div class="p-4">
-                    <h3 class="font-bold text-lg">Makanan Kucing</h3>
-                    <p class="text-gray-600">Rp 50.000</p>
-                    <button class="mt-3 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
-                        Tambah ke Keranjang
+                    <h3 class="font-bold text-lg">Dry Food for Puppy</h3>
+                    <p class="text-gray-600">Rp 70.000</p>
+                    <button class="mt-3 bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 w-full">
+                        Add to Cart
                     </button>
                 </div>
             </div>
 
-            <!-- Product Card -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="https://placekitten.com/301/200" alt="Product 2" class="w-full h-48 object-cover">
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+               <img src="{{ asset('images/addultfood.jpg') }}" alt="Dog Food" class="w-30 h-48 object-cover mx-auto">
                 <div class="p-4">
-                    <h3 class="font-bold text-lg">Mainan Anjing</h3>
-                    <p class="text-gray-600">Rp 35.000</p>
-                    <button class="mt-3 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
-                        Tambah ke Keranjang
+                    <h3 class="font-bold text-lg">Dry Food for Aduult </h3>
+                    <p class="text-gray-600">Rp 90.000</p>
+                    <button class="mt-3 bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 w-full">
+                        Add to Cart
+                </div>
+            </div>
+
+             <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+               <img src="{{ asset('images/vitamin.jpg') }}" alt="Vitamin" class="w-40 h-48 object-cover mx-auto">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">Vitamin</h3>
+                    <p class="text-gray-600">Rp 110.000</p>
+                    <button class="mt-3 bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 w-full">
+                        Add to Cart
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+               <img src="{{ asset('images/snack.jpg') }}" alt="Snack" class="w-40 h-48 object-cover mx-auto">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">Chewy Snack</h3>
+                    <p class="text-gray-600">Rp 40.000</p>
+                    <button class="mt-3 bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 w-full">
+                        Add to Cart
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold text-teal-700 mb-6 border-b-2 border-teal-500 pb-2">Toys</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+                <img src="{{ asset('images/toy1.jpg') }}"alt="Dog Toy" class="w-50 h-48 object-cover mx-auto">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">Chew Toys</h3>
+                    <p class="text-gray-600">Rp 65.000</p>
+                    <button class="mt-3 bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 w-full">
+                        Add to Cart
                     </button>
                 </div>
             </div>
 
-            <!-- Product Card -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="https://placekitten.com/302/200" alt="Product 3" class="w-full h-48 object-cover">
+            <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+                <img src="{{ asset('images/colar.jpg') }}" alt="Pet Colar" class="w-full h-48 object-cover">
                 <div class="p-4">
-                    <h3 class="font-bold text-lg">Shampoo Hewan</h3>
+                    <h3 class="font-bold text-lg">Pet Colar</h3>
                     <p class="text-gray-600">Rp 25.000</p>
-                    <button class="mt-3 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
-                        Tambah ke Keranjang
+                    <button class="mt-3 bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 w-full">
+                        Add to Cart
                     </button>
                 </div>
             </div>
@@ -87,7 +118,7 @@
             <div>
                 <h3 class="text-lg font-semibold mb-4">Menu</h3>
                 <ul class="space-y-2">
-                    <li><a href="{{ route('pet.homr') }}" class="hover:underline">Home</a></li>
+                    <li><a href="{{ route('pet.home') }}" class="hover:underline">Home</a></li>
                     <li><a href="{{ route('pet.shop') }}">Pet Shop</a></li>
                     <li><a href="{{ route('pet.reserve') }}">Reserve</a></li>
                 </ul>
